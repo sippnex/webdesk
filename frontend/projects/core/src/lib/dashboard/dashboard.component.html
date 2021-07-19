@@ -1,0 +1,33 @@
+<div fxLayout="column" fxLayoutGap="24px" style="height: 100%">
+  <div *ngIf="editable" (click)="addItem.emit()" fxFlex="70px" class="add-dashboard-item">
+    <mat-icon>add</mat-icon>
+  </div>
+  <div *ngIf="dashboard && dashboard.items.length === 0" fxLayout="row" fxLayoutAlign="center" style="padding: 24px">
+    <span>Noch keine Elemente vorhanden</span>
+  </div>
+  <gridster fxFlex *ngIf="dashboard" [options]="options" #gridster [style]="editable ? 'opacity: 0.7' : undefined">
+    <gridster-item [item]="dashboardItem" *ngFor="let dashboardItem of dashboard.items">
+      <button *ngIf="editable" mat-fab color="warn" class="delete-button" (click)="deleteItem.emit(dashboardItem)"><mat-icon>delete</mat-icon></button>
+      <div *ngIf="dashboardItem.type == 'AppDashboardItem' else widget" style="height: 100%" fxLayout="column">
+        <h3 style="margin: 0" fxFlex="30px">
+          {{ (dashboardItem | appDashboardItem).app.title }}
+        </h3>
+        <p>
+          {{ (dashboardItem | appDashboardItem).app.description }}
+        </p>
+        <button mat-raised-button
+                color="primary"
+                style="width: 100%"
+                class="not-draggable"
+                fxFlex="36px"
+                (click)="selectItem.emit(dashboardItem)">
+          Öffnen
+        </button>
+      </div>
+      <ng-template #widget>
+        <widget-loader [widgetComponent]="(dashboardItem | widgetDashboardItem).widget.name | widget"></widget-loader>
+      </ng-template>
+    </gridster-item>
+  </gridster>
+
+</div>

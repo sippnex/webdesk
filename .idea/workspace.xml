@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6509cac-8dd0-4ec3-a463-14f1474e31d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/frontend - core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/ng-package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app-loader.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app-loader.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app-loader.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/app-dashboard-item.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/app-dashboard-item.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/dashboard-item.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/dashboard.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/widget-dashboard-item.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/widget-dashboard-item.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-dialog/new-dashboard-dialog.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-dialog/new-dashboard-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-dialog/new-dashboard-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-item-dialog/new-dashboard-item-dialog.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-item-dialog/new-dashboard-item-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-item-dialog/new-dashboard-item-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation-node.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/auth-error.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/auth.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/login/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/logout/logout.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/logout/logout.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/logout/logout.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/model/jwt-response.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/model/jwt.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/model/user.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/security.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/security.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-detail/dashboard-detail.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-detail/dashboard-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-detail/dashboard-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-list/dashboard-list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-list/dashboard-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-list/dashboard-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-settings.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-settings.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/settings.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/settings.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/settings.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/settings.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/settings.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/util/heritable.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/util/json-date.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/webdesk-core-theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget-loader.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/public-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/tsconfig.lib.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/tsconfig.lib.prod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
+  </component>
+  <component name="ProjectId" id="1vO2lHIqxGgsSCiFgLL7B1UCb9x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="16" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/projects/core/src" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.16942552" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/projects/core/src" />
+      <recent name="$PROJECT_DIR$/backend/core/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Webdesk Frontend">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Webdesk Backend" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.sippnex.webdesk.WebdeskApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Webdesk Frontend" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Angular Application" />
+      <item itemvalue="npm.Webdesk Frontend" />
+      <item itemvalue="Spring Boot.Webdesk Backend" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6509cac-8dd0-4ec3-a463-14f1474e31d7" name="Default Changelist" comment="" />
+      <created>1626418964070</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626418964070</updated>
+      <workItem from="1626418966945" duration="675000" />
+      <workItem from="1626419794145" duration="71000" />
+      <workItem from="1626419872035" duration="61000" />
+      <workItem from="1626419958555" duration="219000" />
+      <workItem from="1626420186506" duration="91000" />
+      <workItem from="1626420283617" duration="69000" />
+      <workItem from="1626420357662" duration="1032000" />
+      <workItem from="1626421871895" duration="315000" />
+      <workItem from="1626422194244" duration="88000" />
+      <workItem from="1626422287836" duration="163000" />
+      <workItem from="1626422458268" duration="18000" />
+      <workItem from="1626422480950" duration="44000" />
+      <workItem from="1626422530035" duration="14796000" />
+      <workItem from="1626442376892" duration="5423000" />
+      <workItem from="1626722243952" duration="3119000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/frontend" />
+    </ignored-roots>
+  </component>
+</project>

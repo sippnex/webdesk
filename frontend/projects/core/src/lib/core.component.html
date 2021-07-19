@@ -1,0 +1,33 @@
+<div class="container" fxLayout="column">
+  <div fxFlex="70px" class="toolbar">
+    <mat-toolbar style="height: 100%" fxLayout="row" fxLayoutAlign="space-between center">
+      <div class="toolbar-left">
+        <button class="toolbar-item" mat-icon-button>
+          <mat-icon>whatshot</mat-icon>
+        </button>
+        <div class="toolbar-item clickable" (click)="goHome()">
+          <b>Rocket</b>
+        </div>
+      </div>
+      <div class="toolbar-right">
+        <div class="toolbar-item clickable">
+          <button mat-icon-button>
+            <mat-icon>person</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-toolbar>
+  </div>
+  <div fxFlex
+       fxLayout.gt-xs="row"
+       fxLayout.lt-sm="column"
+       fxLayoutGap="24px"
+       class="body">
+    <div fxShow.lt-sm="false" fxFlex="250px" style="height: 100%;">
+      <app-navigation></app-navigation>
+    </div>
+    <div fxFlex>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

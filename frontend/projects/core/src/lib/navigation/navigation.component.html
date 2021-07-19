@@ -1,0 +1,18 @@
+<div class="list">
+  <h3 class="title">Navigation</h3>
+  <mat-accordion displayMode="flat" *ngIf="navigationTree">
+    <mat-expansion-panel hideToggle *ngFor="let node of navigationTree.children" (click)="navigateTo(node)" [expanded]="isSelected(node)">
+      <mat-expansion-panel-header>
+        <mat-panel-title fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="12px" [ngClass]="{'node-selected': isSelected(node)}">
+          <mat-icon mat-list-icon>{{node.icon}}</mat-icon>
+          <span>{{node.title}}</span>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-list *ngIf="node.children">
+        <mat-list-item *ngFor="let childNode of node.children" (click)="navigateTo(childNode)" class="item">
+          <div mat-line [ngClass]="{'node-selected': isSelected(node)}">{{childNode.title}}</div>
+        </mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

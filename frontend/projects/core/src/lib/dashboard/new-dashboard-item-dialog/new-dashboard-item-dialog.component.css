@@ -1,0 +1,9 @@
+.dialog-container {
+  position: relative;
+}
+
+.button-close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+}

@@ -1,0 +1,28 @@
+.list {
+  width: 250px;
+  height: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.list .mat-expansion-panel {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.title {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.node-selected {
+  font-weight: bold;
+  text-decoration: underline;
+}

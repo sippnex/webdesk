@@ -1,0 +1,35 @@
+@mixin init-theme($background-color, $font-color) {
+  body {
+    background-color: lighten($background-color, 25%);
+    color: $font-color;
+  }
+  .title {
+    margin-bottom: 0 !important;
+  }
+  .toolbar .mat-toolbar {
+    background-color: rgba($background-color, .95);
+    color: $font-color;
+  }
+  .list, .settings-container {
+    background-color: rgba($background-color, .95);
+    color: $font-color;
+  }
+  .item:hover {
+    background-color: mix($background-color, $font-color, 85%);
+  }
+  .add-dashboard-item {
+    background-color: rgba($background-color, .7);
+  }
+  .add-dashboard-item:hover {
+    background-color: mix($background-color, $font-color, 85%);
+  }
+  gridster-item {
+    background-color: rgba($background-color, .95) !important;
+  }
+  .mat-dialog-container {
+    overflow: inherit !important;
+  }
+  .mat-table {
+    background: inherit;
+  }
+}

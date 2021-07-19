@@ -1,0 +1,14 @@
+<div fxLayout="column" style="min-width: 300px">
+  <h3>Neues Dashboard</h3>
+  <form [formGroup]="form" fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="24px" style="width: 100%">
+    <mat-form-field appearance="outline" fxFlex>
+      <mat-label>Name des Dashboards</mat-label>
+      <input placeholder="Name des Dashboards" matInput formControlName="name" />
+    </mat-form-field>
+  </form>
+  <div fxLayout="row" fxLayoutGap="24px">
+    <button fxFlex mat-raised-button (click)="cancel()">Abbrechen</button>
+    <button fxFlex mat-raised-button color="primary" (click)="save()" [disabled]="form.invalid">Erstellen</button>
+  </div>
+</div>
+

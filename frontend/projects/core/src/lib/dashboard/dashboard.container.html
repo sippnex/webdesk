@@ -1,0 +1,71 @@
+<div *ngIf="dashboards" style="position: relative; height: 100%; box-sizing: border-box; padding-bottom: 60px">
+  <app-dashboard *ngIf="selectedDashboard; else noDashboard"
+                 [dashboard]="selectedDashboard"
+                 [editable]="editMode"
+                 (addItem)="addDashboardItem()"
+                 (selectItem)="selectDashboardItem($event)"
+                 (deleteItem)="deleteDashboardItem($event)">
+  </app-dashboard>
+  <ng-template #noDashboard>
+    <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="24px" style="padding: 24px">
+      <span>Sie haben noch kein Dashboard angelegt</span>
+      <button mat-raised-button color="accent" (click)="createDashboard()">Dashboard erstellen</button>
+    </div>
+  </ng-template>
+  <div *ngIf="selectedDashboard" fxLayout="row" fxLayoutAlign="end" fxLayoutGap.gt-xs="24px" fxLayoutGap.lt-sm="12px"
+       style="margin-bottom: 12px">
+    <button mat-raised-button
+            fxShow.lt-sm="false"
+            style="width: 210px; text-align: start"
+            (click)="toggleEditMode()"
+            [disabled]="selectionMode">
+      <mat-icon style="margin-right: 5px">{{editMode ? 'done' : 'dashboard_customize'}}</mat-icon>
+      <span>{{editMode ? 'Bearbeitung beenden' : 'Dashboard bearbeiten'}}</span>
+    </button>
+    <button mat-mini-fab fxShow.gt-xs="false" color="undefined" (click)="toggleEditMode()" [disabled]="selectionMode">
+      <mat-icon>{{editMode ? 'done' : 'dashboard_customize'}}</mat-icon>
+    </button>
+    <button mat-raised-button
+            fxShow.lt-sm="false"
+            color="accent"
+            style="width: 210px; text-align: start"
+            (click)="toggleSelectionMode()"
+            [disabled]="editMode">
+      <mat-icon style="margin-right: 5px">{{selectionMode ? 'close' : 'grid_view'}}</mat-icon>
+      <span>{{selectionMode ? 'Abbrechen' : 'Dashboard wechseln'}}</span>
+    </button>
+    <button mat-mini-fab fxShow.gt-xs="false" (click)="toggleSelectionMode()" [disabled]="editMode">
+      <mat-icon>{{selectionMode ? 'close' : 'grid_view'}}</mat-icon>
+    </button>
+  </div>
+</div>
+
+<mat-chip-list *ngIf="selectionMode" class="mat-chip-list-stacked" style="position: fixed; right: 18px; bottom: 100px;">
+  <mat-chip color="primary" selected (click)="createDashboard()" style="width: 210px; cursor: pointer">
+    <mat-icon style="margin-right: 5px">add</mat-icon>
+    Dashboard erstellen
+  </mat-chip>
+  <mat-chip *ngFor="let dashboard of dashboards"
+            color="accent"
+            selected
+            [disabled]="selectedDashboard.id === dashboard.id"
+            (click)="selectDashboard(dashboard)"
+            style="width: 210px; cursor: pointer"
+            fxLayout="row" fxLayoutAlign="space-between">
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
+      <mat-icon>grid_view</mat-icon>
+      <span style="max-width: 135px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap"
+            [style]="selectedDashboard.id === dashboard.id ? 'text-decoration: underline' : undefined">
+        {{dashboard.name}}
+      </span>
+    </div>
+    <mat-icon matChipRemove (click)="deleteDashboard(dashboard)">cancel</mat-icon>
+  </mat-chip>
+</mat-chip-list>
+
+<!--<mat-chip-list *ngIf="selectedDashboard" style="position: fixed; right: 24px; bottom: 24px;">
+  <mat-chip color="accent" selected>
+    <mat-icon style="margin-right: 5px">grid_view</mat-icon>
+    {{selectedDashboard.name}}
+  </mat-chip>
+</mat-chip-list>-->
