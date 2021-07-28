@@ -1,0 +1,25 @@
+<div fxLayout="row" fxLayoutAlign="space-between" style="margin-bottom: 12px">
+  <h2 *ngIf="node?.id; else newNode">Knoten {{node.id}}</h2>
+  <ng-template #newNode>
+    <h2>Neuer Knoten</h2>
+  </ng-template>
+  <div fxLayout="row" fxLayoutGap="24px">
+    <button mat-raised-button>Abbrechen</button>
+    <button mat-raised-button color="primary" [disabled]="form.invalid || !form.dirty" (click)="saveChanges()">Speichern
+    </button>
+  </div>
+</div>
+
+<div>
+  <h3>Allgemein</h3>
+  <form [formGroup]="form" fxLayout="column">
+    <mat-form-field appearance="fill">
+      <mat-label>Id</mat-label>
+      <input matInput placeholder="Id" type="number" formControlName="id"/>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name" formControlName="name"/>
+    </mat-form-field>
+  </form>
+</div>

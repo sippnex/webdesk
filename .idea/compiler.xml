@@ -7,17 +7,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="backend.core" />
+        <module name="app" />
+        <module name="backend.workflow" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="backend" target="16" />
+      <module name="app" target="16" />
+      <module name="backend" target="1.5" />
       <module name="backend.core" target="16" />
+      <module name="backend.workflow" target="16" />
       <module name="backend/core" target="16" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="app" options="-parameters" />
       <module name="backend" options="-parameters" />
+      <module name="backend.core" options="" />
+      <module name="backend.workflow" options="" />
       <module name="backend/core" options="-parameters" />
     </option>
   </component>

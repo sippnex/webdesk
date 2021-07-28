@@ -1,0 +1,12 @@
+<div mat-dialog-title fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="12px">
+  <mat-icon color="warn">warning_amber</mat-icon>
+  <h2>Ungespeicherte Änderungen</h2>
+</div>
+<mat-dialog-content class="mat-typography">
+  <p>Es gibt noch ungespeicherte Änderungen in der aktuellen Ansicht.</p>
+</mat-dialog-content>
+<mat-dialog-actions fxLayout="row" fxLayoutAlign="end">
+  <button mat-button mat-dialog-close (click)="dialogRef.close({action: 'cancel'})">Abbrechen</button>
+  <button mat-button mat-dialog-close color="warn" (click)="dialogRef.close({action: 'discard'})">Verwerfen</button>
+  <button mat-button  color="primary" autofocus (click)="dialogRef.close({action: 'save'})">Speichern</button>
+</mat-dialog-actions>

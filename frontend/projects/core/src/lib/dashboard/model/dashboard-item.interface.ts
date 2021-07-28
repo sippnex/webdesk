@@ -1,4 +1,4 @@
-import {Heritable} from "../../util/heritable.interface";
+import {Heritable} from "../../shared/heritable.interface";
 
 export interface DashboardItem extends Heritable {
   id: number;

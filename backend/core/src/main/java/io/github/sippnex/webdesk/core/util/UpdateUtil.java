@@ -1,26 +1,27 @@
 package io.github.sippnex.webdesk.core.util;
 
-import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class UpdateUtil {
 
     public static <T extends Updatable<T, ID>, ID> List<T> updateList(List<T> oldList, List<T> newList) {
-        final List<T> mergedList = new ArrayList<>();
-        newList.forEach(newElement -> {
-            if (newElement.getId() != null) {
-                final T oldElement = oldList.stream()
-                        .filter(el -> el.getId().equals(newElement.getId()))
-                        .findFirst()
-                        .orElseThrow(() -> new RuntimeException(MessageFormat.format("Element with id {0} not found", newElement.getId())));
-                oldElement.update(newElement);
-                mergedList.add(oldElement);
+        final List<T> elementsToDelete = new ArrayList<>();
+        oldList.forEach(oldElement -> {
+            final Optional<T> newElement = newList.stream()
+                    .filter(el -> el.getId().equals(oldElement.getId()))
+                    .findFirst();
+            if (newElement.isPresent()) {
+                oldElement.update(newElement.get());
+                newList.remove(newElement.get());
             } else {
-                mergedList.add(newElement);
+                elementsToDelete.add(oldElement);
             }
         });
-        return mergedList;
+        oldList.addAll(newList);
+        oldList.removeAll(elementsToDelete);
+        return oldList;
     }
 
 }

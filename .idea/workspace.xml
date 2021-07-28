@@ -5,100 +5,232 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6509cac-8dd0-4ec3-a463-14f1474e31d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/frontend - core.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/ng-package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app-loader.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app-loader.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app-loader.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/app-dashboard-item.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/app-dashboard-item.pipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/dashboard-item.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/dashboard.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/widget-dashboard-item.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/widget-dashboard-item.pipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-dialog/new-dashboard-dialog.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-dialog/new-dashboard-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-dialog/new-dashboard-dialog.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-item-dialog/new-dashboard-item-dialog.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-item-dialog/new-dashboard-item-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-item-dialog/new-dashboard-item-dialog.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation-node.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/navigation/navigation.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/auth-error.interceptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/auth.guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/auth.interceptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/login/login.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/login/login.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/logout/logout.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/logout/logout.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/logout/logout.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/model/jwt-response.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/model/jwt.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/model/user.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/security.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/security.route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/security/user.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-detail/dashboard-detail.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-detail/dashboard-detail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-detail/dashboard-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-list/dashboard-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-list/dashboard-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-list/dashboard-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-settings.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/dashboard-settings/dashboard-settings.route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/settings.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/settings.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/settings.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/settings.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/settings/settings.route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/util/heritable.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/util/json-date.interceptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/webdesk-core-theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget-loader.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.directive.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.pipe.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/widget/widget.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/public-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/tsconfig.lib.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/tsconfig.lib.prod.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/core/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_50.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_39.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_16_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/core/src/main/java/io/github/sippnex/webdesk/core/CoreModuleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/core/src/main/java/io/github/sippnex/webdesk/core/EnableWebdeskCore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/EnableWebdeskWorkflow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/WorkflowModuleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/AppNotificationWorkflowAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/Workflow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowActionAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowActionAttributeMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowActionAttributeValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowActionParameter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowActionRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowDecisionEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowDecisionNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowMappingValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowTransition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowFormDatePickerElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowFormDateRangePickerElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowFormElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowFormInstruction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowFormRichTextElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowFormSelectElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowFormSelectOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowFormTextElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowPayloadElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowPayloadElementID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowTextPayloadElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/repository/WorkflowItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/repository/WorkflowNodeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/repository/WorkflowRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/service/AppNotificationActionRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/service/WorkflowItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/service/WorkflowNodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/service/WorkflowService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/web/rest/WorkflowItemResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/web/rest/WorkflowNodeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/web/rest/WorkflowResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/delete-confirm-dialog/delete-confirm-dialog.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/delete-confirm-dialog/delete-confirm-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/delete-confirm-dialog/delete-confirm-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/model-form-binding.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/shared.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes-detector.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes-dialog/unsaved-changes-dialog.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes-dialog/unsaved-changes-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes-dialog/unsaved-changes-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/frontend.workflow.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/ng-package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-attribute-mapping-detail/admin-workflow-action-attribute-mapping-detail.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-attribute-mapping-detail/admin-workflow-action-attribute-mapping-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-attribute-mapping-detail/admin-workflow-action-attribute-mapping-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-detail.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-detail.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-form-element-detail/admin-workflow-form-element-detail.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-form-element-detail/admin-workflow-form-element-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-form-element-detail/admin-workflow-form-element-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-node-detail/admin-workflow-node-detail.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-node-detail/admin-workflow-node-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-node-detail/admin-workflow-node-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-transition-detail/admin-workflow-transition-detail.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-transition-detail/admin-workflow-transition-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-transition-detail/admin-workflow-transition-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-list/admin-workflow-list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-list/admin-workflow-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-list/admin-workflow-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/workflow-admin-app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/workflow-admin-app.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-widgets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/new-workflow/new-workflow.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/new-workflow/new-workflow.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/new-workflow/new-workflow.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-detail/workflow-item-detail.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-detail/workflow-item-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-detail/workflow-item-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-list/workflow-item-list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-list/workflow-item-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-list/workflow-item-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-action-attribute-mapping.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-action-attribute.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-action.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-decision-endpoint-false.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-decision-endpoint-true.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-decision-endpoint.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-decision-node.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-form-element.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-form-rich-text-element.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-form-select-element.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-form-text-element.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-item.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-node.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-payload-element.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-text-payload-element.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-transition.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/widgets/quick-actions-widget/quick-action.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/widgets/quick-actions-widget/quick-actions-widget.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/widgets/quick-actions-widget/quick-actions-widget.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/widgets/quick-actions-widget/quick-actions-widget.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/widgets/quick-actions-widget/quick-actions-widget.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/widgets/workflow-overview-widget/workflow-overview-widget.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/widgets/workflow-overview-widget/workflow-overview-widget.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/widgets/workflow-overview-widget/workflow-overview-widget.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/widgets/workflow-overview-widget/workflow-overview-widget.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/workflow-admin.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/workflow-item.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/workflow-node.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/workflow.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/workflow.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/public-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/tsconfig.lib.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/tsconfig.lib.prod.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_48.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_39.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_48.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_50.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_48.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_50.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/core/src/main/java/io/github/sippnex/webdesk/core/CoreModule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/core/src/main/java/io/github/sippnex/webdesk/core/security/service/JwtAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/core/src/main/java/io/github/sippnex/webdesk/core/security/service/JwtAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/core/src/main/java/io/github/sippnex/webdesk/core/util/UpdateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/core/src/main/java/io/github/sippnex/webdesk/core/util/UpdateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/io/github/sippnex/webdesk/WebdeskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/src/main/java/io/github/sippnex/webdesk/app/WebdeskApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/io/github/sippnex/webdesk/BackendApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/src/test/java/io/github/sippnex/webdesk/app/AppApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app-loader.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app-loader.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/app/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/core.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/dashboard-item.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/model/dashboard-item.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/util/heritable.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/heritable.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/util/json-date.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/json-date.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/webdesk-core-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/webdesk-core-theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/public-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,8 +238,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1vO2lHIqxGgsSCiFgLL7B1UCb9x" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -122,40 +271,47 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/projects/core/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/projects/core/src/lib/shared" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.16942552" />
+    <property name="project.structure.side.proportion" value="0.13642567" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/frontend/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/projects/core/src" />
-      <recent name="$PROJECT_DIR$/backend/core/src/main/java" />
+      <recent name="$PROJECT_DIR$/frontend/projects/core/src/lib/shared" />
+      <recent name="$PROJECT_DIR$/backend/workflow" />
+      <recent name="$PROJECT_DIR$/backend/src/main/resources" />
+      <recent name="$PROJECT_DIR$/frontend/projects/workflow/src/lib" />
+      <recent name="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow" />
       <recent name="$PROJECT_DIR$/frontend/src/assets" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.sippnex.webdesk.workflow" />
+      <recent name="io.github.sippnex.webdesk" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.Webdesk Frontend">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.Webdesk Backend">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,9 +319,15 @@
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
-    <configuration name="Webdesk Backend" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="backend" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.sippnex.webdesk.WebdeskApplication" />
+    <configuration name="Webdesk Backend" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.sippnex.webdesk.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.sippnex.webdesk.app.WebdeskApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
@@ -187,6 +349,11 @@
       <item itemvalue="npm.Webdesk Frontend" />
       <item itemvalue="Spring Boot.Webdesk Backend" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Webdesk Backend" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -210,7 +377,20 @@
       <workItem from="1626422480950" duration="44000" />
       <workItem from="1626422530035" duration="14796000" />
       <workItem from="1626442376892" duration="5423000" />
-      <workItem from="1626722243952" duration="3119000" />
+      <workItem from="1626722243952" duration="5319000" />
+      <workItem from="1626761984848" duration="740000" />
+      <workItem from="1626847092008" duration="1089000" />
+      <workItem from="1626862851443" duration="9000" />
+      <workItem from="1627111752072" duration="1337000" />
+      <workItem from="1627127461988" duration="6446000" />
+      <workItem from="1627243956249" duration="433000" />
+      <workItem from="1627316450021" duration="2467000" />
+      <workItem from="1627370466206" duration="8860000" />
+      <workItem from="1627389748689" duration="1786000" />
+      <workItem from="1627397086955" duration="791000" />
+      <workItem from="1627409484514" duration="339000" />
+      <workItem from="1627409838034" duration="249000" />
+      <workItem from="1627410115021" duration="8743000" />
     </task>
     <servers />
   </component>
@@ -233,5 +413,17 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/frontend" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="io.github.sippnex.webdesk.workflow.domain.Workflow" memberName="id" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="workflow" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -28,8 +28,12 @@
   }
   .mat-dialog-container {
     overflow: inherit !important;
+    background-color: $background-color;
   }
   .mat-table {
     background: inherit;
+  }
+  .app-container {
+    background-color: $background-color;
   }
 }

@@ -1,0 +1,45 @@
+<div fxLayout="row" fxLayoutAlign="flex-start center" fxLayoutGap="24px">
+  <a routerLink="../../">Workflow {{workflow ? workflow.id : ''}} </a> <span>/</span> <a routerLink=".">{{ formElement ? 'Formular-Element ' + formElement.id : 'Neues Formular-Element'}}</a>
+</div>
+<h2>Workflow {{workflow ? workflow.id : ''}} - {{ formElement ? 'Formular-Element ' + formElement.id : 'Neues Formular-Element'}}</h2>
+<div fxLayout="column">
+  <form [formGroup]="form" fxLayout="column">
+    <mat-form-field appearance="fill">
+      <mat-label>Id</mat-label>
+      <input matInput formControlName="id">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Typ</mat-label>
+      <mat-select formControlName="type">
+        <mat-option *ngFor="let formType of formTypes" [value]="formType.name">
+          {{formType.displayText}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <ng-container *ngIf="form.contains('options')">
+      <mat-form-field appearance="fill">
+        <mat-label>Auswahloptionen</mat-label>
+        <mat-chip-list #chipList aria-label="Auswahloptionen">
+          <mat-chip *ngFor="let option of options" removable (removed)="remove(option)">
+            {{option.value}}
+            <mat-icon matChipRemove>cancel</mat-icon>
+          </mat-chip>
+          <input formControlName="options"
+                 placeholder="Neue Option..."
+                 [matChipInputFor]="chipList"
+                 [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                 [matChipInputAddOnBlur]="true"
+                 (matChipInputTokenEnd)="add($event)">
+        </mat-chip-list>
+      </mat-form-field>
+    </ng-container>
+  </form>
+</div>
+<div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="24px" style="margin-top: 32px">
+  <button mat-raised-button color="warn" [disabled]="!form.dirty" (click)="reset()">Verwerfen</button>
+  <button mat-raised-button color="primary" [disabled]="form.invalid" (click)="save()">Speichern</button>
+</div>

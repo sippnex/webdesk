@@ -1,0 +1,16 @@
+<h3 style="margin-top: 0">Schnellaktionen</h3>
+<mat-form-field appearance="fill">
+  <mat-label>Wonach suchen Sie?</mat-label>
+  <input type="text" matInput [formControl]="quickActionsControl">
+</mat-form-field>
+<mat-list>
+  <mat-list-item *ngFor="let quickAction of filteredQuickActions | async" (click)="executeQuickAction(quickAction)">
+    <mat-icon mat-list-icon>{{quickAction.icon}}</mat-icon>
+    <div mat-line>{{quickAction.name}}</div>
+    <div mat-line style="color: gray">Reichen Sie einen neuen Urlaub ein</div>
+  </mat-list-item>
+  <mat-list-item style="color: gray">
+    <mat-icon mat-list-icon>more_horiz</mat-icon>
+    <div mat-line>und x weitere</div>
+  </mat-list-item>
+</mat-list>

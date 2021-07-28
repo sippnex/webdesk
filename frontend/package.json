@@ -22,6 +22,7 @@
     "@angular/router": "~12.0.4",
     "angular-gridster2": "^12.0.1",
     "@angular/flex-layout": "^12.0.0-beta.34",
+    "sigma": "^1.2.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"

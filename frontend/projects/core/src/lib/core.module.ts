@@ -6,7 +6,7 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import {SecurityModule} from './security/security.module';
 import {RouterModule} from "@angular/router";
 import {coreRoutes} from './core.route';
-import {JsonDateInterceptor} from './util/json-date.interceptor';
+import {JsonDateInterceptor} from './shared/json-date.interceptor';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
@@ -15,7 +15,6 @@ import {DashboardModule} from "./dashboard/dashboard.module";
 import {AppModule} from "./app/app.module";
 import {WidgetModule} from "./widget/widget.module";
 import {NavigationModule} from "./navigation/navigation.module";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [

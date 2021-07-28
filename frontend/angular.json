@@ -29,7 +29,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/sigma/build/sigma.min.js",
+              "node_modules/sigma/build/plugins/sigma.layout.forceAtlas2.min.js",
+              "node_modules/sigma/build/plugins/sigma.renderers.parallelEdges.min.js",
+              "node_modules/sigma/build/plugins/sigma.renderers.edgeLabels.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -96,7 +101,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/sigma/build/sigma.min.js",
+              "node_modules/sigma/build/plugins/sigma.layout.forceAtlas2.min.js",
+              "node_modules/sigma/build/plugins/sigma.renderers.parallelEdges.min.js",
+              "node_modules/sigma/build/plugins/sigma.renderers.edgeLabels.min.js"
+            ]
           }
         }
       }
@@ -128,6 +138,37 @@
             "main": "projects/core/src/test.ts",
             "tsConfig": "projects/core/tsconfig.spec.json",
             "karmaConfig": "projects/core/karma.conf.js"
+          }
+        }
+      }
+    },
+    "workflow": {
+      "projectType": "library",
+      "root": "projects/workflow",
+      "sourceRoot": "projects/workflow/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/workflow/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/workflow/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/workflow/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/workflow/src/test.ts",
+            "tsConfig": "projects/workflow/tsconfig.spec.json",
+            "karmaConfig": "projects/workflow/karma.conf.js"
           }
         }
       }

@@ -1,0 +1,16 @@
+.mat-form-field {
+  width: 100%;
+}
+
+.mat-list {
+  margin-top: -20px;
+}
+
+.mat-list-item {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.mat-list-item:hover {
+  background-color: #e5e5e5;
+}

@@ -18,7 +18,7 @@ export class AppService {
     this.apps.set(appName, route);
     const routerConfig = this.router.config;
     // TODO: fix this hard coded indices
-    routerConfig[0].children![0].children![3].children![0].children!.push(route);
+    routerConfig[0].children![2].children![0].children!.push(route);
     this.router.resetConfig(routerConfig);
   }
 

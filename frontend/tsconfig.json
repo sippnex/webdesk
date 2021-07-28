@@ -6,6 +6,9 @@
     "paths": {
       "@webdesk/core": [
         "./projects/core/src/public-api"
+      ],
+      "@webdesk/workflow": [
+        "./projects/workflow/src/public-api"
       ]
     },
     "outDir": "./dist/out-tsc",

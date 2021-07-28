@@ -1,0 +1,40 @@
+<div fxLayout="row" fxLayoutAlign="flex-start center" fxLayoutGap="24px">
+  <a routerLink="../../../../">Workflow {{workflowId}}
+  </a>
+  <span>/</span>
+  <a routerLink="../../">Kante {{transitionId}}</a>
+  <span>/</span>
+  <a routerLink="../../">Aktion {{workflowActionId}}</a>
+  <span>/</span>
+  <a routerLink=".">{{getAttributeAttributeMappingTypeText()}} {{workflowActionAttributeMappingId}}</a>
+</div>
+<h2>Workflow {{workflowId}} - Kante {{transitionId}} - Aktion {{workflowActionId}} - {{getAttributeAttributeMappingTypeText()}} {{workflowActionAttributeMappingId}}</h2>
+<div fxLayout="column">
+  <div>
+    <h3>Allgemein</h3>
+    <form>
+      <mat-form-field appearance="fill" style="width: 100%">
+        <mat-label>Id</mat-label>
+        <input matInput disabled>
+      </mat-form-field>
+      <mat-form-field appearance="fill" style="width: 100%">
+        <mat-label>Quellattribut</mat-label>
+        <mat-select>
+          <mat-option>workflowPayload.startDate</mat-option>
+          <mat-option>workflowPayload.endDate</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill" style="width: 100%">
+        <mat-label>Zielattribut</mat-label>
+        <mat-select>
+          <mat-option>startDate</mat-option>
+          <mat-option>endDate</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="end" style="margin-top: 32px">
+  <button mat-button disabled>Zurücksetzen</button>
+  <button mat-button disabled>Speichern</button>
+</div>
