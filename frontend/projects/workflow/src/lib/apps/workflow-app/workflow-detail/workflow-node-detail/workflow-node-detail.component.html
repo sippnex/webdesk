@@ -1,0 +1,36 @@
+<div *ngIf="node" class="webdesk-page-header" fxLayout="row" fxLayoutAlign="space-between">
+  <h2>
+    <a routerLink="../">Workflows</a>
+    -
+    <a routerLink="../../">Workflow {{node.workflowId}}</a>
+    -
+    <a *ngIf="node.id; else newNode" routerLink=".">Knoten {{node.id}}</a>
+    <ng-template #newNode>
+      <span>Neuer Knoten</span>
+    </ng-template>
+  </h2>
+  <div fxLayout="row" fxLayoutGap="24px">
+    <button mat-raised-button (click)="goBack()">Zurück</button>
+    <button mat-raised-button color="primary" [disabled]="form.pristine || form.invalid" (click)="saveChanges(true)">
+      Speichern
+    </button>
+  </div>
+</div>
+
+<div>
+  <h3>Allgemein</h3>
+  <form [formGroup]="form" fxLayout="column">
+    <mat-form-field appearance="fill">
+      <mat-label>Id</mat-label>
+      <input matInput placeholder="Id" type="number" formControlName="id"/>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name" formControlName="name"/>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Symbol</mat-label>
+      <input matInput placeholder="Symbol" formControlName="icon"/>
+    </mat-form-field>
+  </form>
+</div>

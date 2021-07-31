@@ -36,4 +36,24 @@
   .app-container {
     background-color: $background-color;
   }
+  .dialog-container {
+    position: relative;
+    .button-close {
+      position: absolute;
+      top: -40px;
+      right: -40px;
+    }
+  }
+  .webdesk-page-header {
+    margin-bottom: 24px;
+    h2 {
+      margin: 0 !important;
+    }
+    a {
+      color: $font-color;
+    }
+    a:hover {
+      color: rgba($font-color, .8);
+    }
+  }
 }

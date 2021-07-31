@@ -1,8 +1,6 @@
 package io.github.sippnex.webdesk.workflow.domain.form;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonSubTypes;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.*;
 import io.github.sippnex.webdesk.core.util.Updatable;
 import io.github.sippnex.webdesk.workflow.domain.Workflow;
 
@@ -28,7 +26,8 @@ public abstract class WorkflowFormElement implements Updatable<WorkflowFormEleme
     private String displayName;
 
     @ManyToOne
-    @JsonIgnore
+    @JsonIdentityReference(alwaysAsId = true)
+    @JsonProperty("workflowId")
     private Workflow workflow;
 
     public WorkflowFormElement() {

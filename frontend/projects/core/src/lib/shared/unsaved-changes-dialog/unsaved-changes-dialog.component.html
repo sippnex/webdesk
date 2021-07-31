@@ -8,5 +8,5 @@
 <mat-dialog-actions fxLayout="row" fxLayoutAlign="end">
   <button mat-button mat-dialog-close (click)="dialogRef.close({action: 'cancel'})">Abbrechen</button>
   <button mat-button mat-dialog-close color="warn" (click)="dialogRef.close({action: 'discard'})">Verwerfen</button>
-  <button mat-button  color="primary" autofocus (click)="dialogRef.close({action: 'save'})">Speichern</button>
+  <button *ngIf="data.saveEnabled" mat-button color="primary" autofocus (click)="dialogRef.close({action: 'save'})">Speichern</button>
 </mat-dialog-actions>

@@ -1,6 +1,6 @@
 package io.github.sippnex.webdesk.workflow.domain.form;
 
-import io.github.sippnex.webdesk.workflow.domain.WorkflowItem;
+import io.github.sippnex.webdesk.workflow.domain.WorkflowInstance;
 
 import javax.persistence.Embeddable;
 import javax.persistence.ManyToOne;
@@ -10,7 +10,7 @@ import java.io.Serializable;
 public class WorkflowPayloadElementID implements Serializable {
 
     @ManyToOne
-    private WorkflowItem workflowItem;
+    private WorkflowInstance workflowInstance;
 
     private String name;
 
@@ -21,12 +21,12 @@ public class WorkflowPayloadElementID implements Serializable {
         this.name = name;
     }
 
-    public WorkflowItem getWorkflowItem() {
-        return workflowItem;
+    public WorkflowInstance getWorkflowItem() {
+        return workflowInstance;
     }
 
-    public void setWorkflowItem(WorkflowItem workflowItem) {
-        this.workflowItem = workflowItem;
+    public void setWorkflowItem(WorkflowInstance workflowInstance) {
+        this.workflowInstance = workflowInstance;
     }
 
     public String getName() {

@@ -27,10 +27,10 @@ public class Workflow implements Updatable<Workflow, Long> {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "workflow", orphanRemoval = true)
     private List<WorkflowNode> nodes;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "workflow")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "workflow", orphanRemoval = true)
     private List<WorkflowTransition> transitions;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "workflow")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "workflow", orphanRemoval = true)
     private List<WorkflowFormElement> formElements;
 
     public Long getId() {

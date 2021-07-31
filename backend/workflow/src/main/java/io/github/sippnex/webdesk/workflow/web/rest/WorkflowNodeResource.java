@@ -1,10 +1,7 @@
 package io.github.sippnex.webdesk.workflow.web.rest;
 
-import com.fasterxml.jackson.annotation.ObjectIdGenerator;
-import com.fasterxml.jackson.annotation.ObjectIdResolver;
 import io.github.sippnex.webdesk.workflow.domain.WorkflowNode;
 import io.github.sippnex.webdesk.workflow.service.WorkflowNodeService;
-import io.github.sippnex.webdesk.workflow.service.WorkflowService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -34,8 +31,14 @@ public class WorkflowNodeResource {
     }
 
     @GetMapping("")
-    public ResponseEntity<List<WorkflowNode>> getAllNodes() {
-        return new ResponseEntity<>(workflowNodeService.getAllNodes(), HttpStatus.OK);
+    public ResponseEntity<List<WorkflowNode>> getAllNodes(@RequestParam(required = false) Long workflowId) {
+        final List<WorkflowNode> nodes;
+        if (workflowId != null) {
+            nodes = workflowNodeService.getAllNodesByWorkflowId(workflowId);
+        } else {
+            nodes = workflowNodeService.getAllNodes();
+        }
+        return new ResponseEntity<>(nodes, HttpStatus.OK);
     }
 
     @GetMapping("{id}")

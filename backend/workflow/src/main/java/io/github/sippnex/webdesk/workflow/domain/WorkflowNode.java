@@ -2,7 +2,6 @@ package io.github.sippnex.webdesk.workflow.domain;
 
 import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import io.github.sippnex.webdesk.core.util.Updatable;
 
 import javax.persistence.*;

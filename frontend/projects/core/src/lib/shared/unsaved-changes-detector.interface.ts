@@ -1,4 +1,5 @@
 export interface UnsavedChangesProtector {
   hasUnsavedChanges(): boolean;
-  saveChanges(): Promise<void>;
+  isSaveEnabled(): boolean;
+  saveChanges(...args: any): Promise<void> | void;
 }

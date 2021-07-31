@@ -1,3 +1,15 @@
 .selected-dashboard {
   transform: translateX(-30px);
 }
+
+.dashboard-chips {
+  position: absolute;
+  left: 0;
+  bottom: 24px;
+}
+
+.fab {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}

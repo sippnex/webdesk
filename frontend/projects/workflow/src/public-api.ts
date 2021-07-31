@@ -3,4 +3,3 @@
  */
 
 export * from './lib/workflow.module';
-export * from './lib/workflow-admin.module';

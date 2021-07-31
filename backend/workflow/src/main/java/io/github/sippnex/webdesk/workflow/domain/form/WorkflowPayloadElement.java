@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import io.github.sippnex.webdesk.workflow.domain.WorkflowItem;
+import io.github.sippnex.webdesk.workflow.domain.WorkflowInstance;
 
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
@@ -28,7 +28,7 @@ public abstract class WorkflowPayloadElement {
     }
 
     @JsonBackReference
-    public WorkflowItem getWorkflowItem() {
+    public WorkflowInstance getWorkflowItem() {
         return id != null ? id.getWorkflowItem() : null;
     }
 
@@ -36,11 +36,11 @@ public abstract class WorkflowPayloadElement {
         return id != null ? id.getName() : null;
     }
 
-    public void setWorkflowItem(WorkflowItem workflowItem) {
+    public void setWorkflowItem(WorkflowInstance workflowInstance) {
         if (id == null) {
             this.id = new WorkflowPayloadElementID();
         }
-        id.setWorkflowItem(workflowItem);
+        id.setWorkflowItem(workflowInstance);
     }
 
     public void setName(String name) {

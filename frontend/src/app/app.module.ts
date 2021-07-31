@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {RouterModule} from "@angular/router";
 import {CoreModule} from "@webdesk/core";
 import {WorkflowModule} from "@webdesk/workflow";
-import {WorkflowAdminModule} from "@webdesk/workflow";
 
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import {WorkflowAdminModule} from "@webdesk/workflow";
     RouterModule,
     CoreModule,
     WorkflowModule,
-    WorkflowAdminModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

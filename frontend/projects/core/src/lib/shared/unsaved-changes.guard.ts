@@ -17,11 +17,14 @@ export class UnsavedChangesGuard implements CanDeactivate<UnsavedChangesProtecto
 
   async canDeactivate(component: UnsavedChangesProtector): Promise<boolean> {
     if (component.hasUnsavedChanges()) {
-      const dialogRef = this.dialog.open(UnsavedChangesDialogComponent);
+      const dialogRef = this.dialog.open(UnsavedChangesDialogComponent, {
+        data: {
+          saveEnabled: component.isSaveEnabled()
+        }
+      });
       const result: UnsavedChangesDialogResult = await dialogRef.afterClosed().toPromise();
       if (result.action === 'save') {
         await component.saveChanges();
-        return true;
       } else if (result.action === 'cancel') {
         return false;
       }

@@ -12,6 +12,7 @@ import {
 } from "./new-dashboard-item-dialog/new-dashboard-item-dialog.component";
 import {WidgetDashboardItem} from "./model/widget-dashboard-item.interface";
 import {NewDashboardDialogComponent} from "./new-dashboard-dialog/new-dashboard-dialog.component";
+import {DeleteConfirmDialogComponent} from "@webdesk/core";
 
 @Component({
   selector: 'app-dashboard-container',
@@ -22,7 +23,6 @@ export class DashboardContainerComponent implements OnInit {
 
   dashboards: Dashboard[];
   selectedDashboard: Dashboard;
-  selectionMode = false;
   editMode = false;
 
   constructor(private route: ActivatedRoute,
@@ -35,10 +35,6 @@ export class DashboardContainerComponent implements OnInit {
     this.loadDashboards();
   }
 
-  toggleSelectionMode() {
-    this.selectionMode = !this.selectionMode;
-  }
-
   toggleEditMode() {
     this.editMode = !this.editMode;
   }
@@ -47,20 +43,24 @@ export class DashboardContainerComponent implements OnInit {
     const dialogRef = this.dialog.open(NewDashboardDialogComponent);
     dialogRef.afterClosed().subscribe((result: string | undefined) => {
       if (result) {
-        this.dashboardService.createDashboard(result).subscribe(() => this.loadDashboards());
+        this.dashboardService.createDashboard(result).subscribe(() => {
+          this.loadDashboards();
+          this.editMode = true;
+        });
       }
     });
-    // this.selectedDashboard = dashboard;
-    // this.selectionMode = false;
   }
 
   selectDashboard(dashboard: Dashboard): void {
     this.selectedDashboard = dashboard;
-    this.selectionMode = false;
   }
 
-  deleteDashboard(dashboard: Dashboard): void {
-    this.dashboardService.deleteDashboard(dashboard).subscribe(() => this.loadDashboards());
+  async deleteDashboard(dashboard: Dashboard): Promise<void>  {
+    const dialogRef = this.dialog.open(DeleteConfirmDialogComponent);
+    const result: boolean = await dialogRef.afterClosed().toPromise();
+    if (result) {
+      this.dashboardService.deleteDashboard(dashboard).subscribe(() => this.loadDashboards());
+    }
   }
 
   addDashboardItem(): void {

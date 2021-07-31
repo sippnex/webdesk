@@ -1,10 +1,10 @@
 import {WorkflowNode} from './workflow-node.interface';
 
 export interface WorkflowTransition {
-  id: number;
+  id?: number;
   name: string;
   icon: string;
-  primary: boolean;
+  workflowId: number;
   sourceNode?: WorkflowNode;
   targetNode?: WorkflowNode;
 }

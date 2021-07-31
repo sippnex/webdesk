@@ -1,0 +1,43 @@
+<div *ngIf="workflowInstance" class="webdesk-page-header" fxLayout="row" fxLayoutAlign="space-between">
+  <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="12px">
+    <button mat-raised-button (click)="goBack()">
+      <mat-icon style="margin-right: 8px">chevron_left</mat-icon>
+      <span>Zurück</span>
+    </button>
+    <h2>
+      <a routerLink="../">Vorgänge</a>
+      -
+      <a *ngIf="workflowInstance.id; else newWorkflow" routerLink=".">Vorgang {{workflowInstance.id}}</a>
+      <ng-template #newWorkflow>
+        <span>Neuer Vorgang</span>
+      </ng-template>
+    </h2>
+  </div>
+  <div fxLayout="row" fxLayoutGap="24px">
+    <button *ngFor="let transition of workflowInstance.availableTransitions"
+            mat-raised-button
+            (click)="saveChanges(transition)">
+      <span>{{transition.name}}</span>
+      <mat-icon style="margin-left: 8px">{{transition.icon}}</mat-icon>
+    </button>
+  </div>
+</div>
+
+<div fxLayout="column" fxLayoutGap="24px">
+  <div *ngIf="workflowInstance">
+    <p *ngIf="workflowInstance.currentNode">Status: {{workflowInstance.currentNode.name}}</p>
+  </div>
+
+  <form *ngIf="form" [formGroup]="form">
+    <ng-container *ngIf="workflowInstance.workflow">
+      <mat-form-field *ngFor="let formElement of workflowInstance.workflow!.formElements" appearance="fill"
+                      style="width: 100%">
+        <mat-label>{{formElement.name}}</mat-label>
+        <input *ngIf="formElement.type === 'WorkflowFormTextElement'" matInput [formControlName]="formElement.name"/>
+      </mat-form-field>
+      <p *ngIf="workflowInstance.workflow!.formElements.length === 0">
+        Dieser Workflow enthält keine Eingabemöglichkeiten.
+      </p>
+    </ng-container>
+  </form>
+</div>

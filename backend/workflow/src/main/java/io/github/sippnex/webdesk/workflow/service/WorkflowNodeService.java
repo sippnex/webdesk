@@ -32,6 +32,10 @@ public class WorkflowNodeService {
         return workflowNodeRepository.findAll();
     }
 
+    public List<WorkflowNode> getAllNodesByWorkflowId(Long workflowId) {
+        return workflowNodeRepository.findAllByWorkflowId(workflowId);
+    }
+
     public Optional<WorkflowNode> getNodeById(Long id) {
         return workflowNodeRepository.findById(id);
     }

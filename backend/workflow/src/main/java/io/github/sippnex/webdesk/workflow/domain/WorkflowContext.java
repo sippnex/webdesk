@@ -2,16 +2,16 @@ package io.github.sippnex.webdesk.workflow.domain;
 
 public class WorkflowContext {
 
-    private final WorkflowItem item;
+    private final WorkflowInstance item;
 
     private final WorkflowTransition transition;
 
-    public WorkflowContext(WorkflowItem item, WorkflowTransition transition) {
+    public WorkflowContext(WorkflowInstance item, WorkflowTransition transition) {
         this.item = item;
         this.transition = transition;
     }
 
-    public WorkflowItem getItem() {
+    public WorkflowInstance getItem() {
         return item;
     }
 

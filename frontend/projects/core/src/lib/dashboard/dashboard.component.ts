@@ -1,7 +1,6 @@
 import {
   Component,
   Input,
-  OnInit,
   Output,
   ViewChild,
   EventEmitter, OnChanges, SimpleChanges
@@ -10,7 +9,6 @@ import {GridsterComponent, GridsterConfig} from 'angular-gridster2';
 import {Dashboard} from "./model/dashboard.interface";
 import {DashboardItem} from "./model/dashboard-item.interface";
 import {GridsterItem, GridsterItemComponentInterface} from "angular-gridster2/lib/gridsterItem.interface";
-import {animate, state, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-dashboard',

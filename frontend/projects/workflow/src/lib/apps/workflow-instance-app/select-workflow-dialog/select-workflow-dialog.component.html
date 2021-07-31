@@ -1,0 +1,20 @@
+<div class="dialog-container">
+  <button mat-fab class="button-close" (click)="cancel()">
+    <mat-icon>close</mat-icon>
+  </button>
+  <mat-form-field appearance="fill" style="width: 100%">
+    <mat-label>Workflow suchen</mat-label>
+    <input type="text" matInput [formControl]="workflowSearchControl">
+  </mat-form-field>
+  <div fxLayout="row wrap" fxLayoutGap="24px">
+    <mat-card *ngFor="let workflow of filteredWorkflows | async" style="width: 100%">
+      <mat-icon mat-list-icon>beach_access</mat-icon>
+      <div>{{workflow.name}}</div>
+      <div style="color: gray">Beschreibung hinzufügen</div>
+      <div style="padding-top: 12px">
+        <button mat-raised-button color="primary" (click)="selectWorkflow(workflow)" style="width: 100%">Workflow starten</button>
+      </div>
+    </mat-card>
+    <p *ngIf="(filteredWorkflows | async)?.length === 0">Keine Workflows gefunden...</p>
+  </div>
+</div>

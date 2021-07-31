@@ -1,4 +1,6 @@
 export interface ModelFormBinding {
-  updateForm(): void;
+  initModel(...args: any): void;
+  initForm(...args: any): void;
   updateModel(): void;
+  updateForm(): void;
 }

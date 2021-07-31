@@ -3,8 +3,10 @@ package io.github.sippnex.webdesk.workflow.domain;
 import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import io.github.sippnex.webdesk.core.util.Updatable;
 import io.github.sippnex.webdesk.core.util.UpdateUtil;
+import io.github.sippnex.webdesk.workflow.web.converter.WorkflowNodeDeserializer;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -22,15 +24,18 @@ public class WorkflowTransition implements Updatable<WorkflowTransition, Long> {
     private String icon;
 
     @ManyToOne
-    @JsonIgnore
+    @JsonIdentityReference(alwaysAsId = true)
+    @JsonProperty("workflowId")
     private Workflow workflow;
 
     @Column(name = "`primary`")
     private Boolean primary = false;
 
+    @JsonDeserialize(using = WorkflowNodeDeserializer.class)
     @ManyToOne(cascade = CascadeType.ALL)
     private WorkflowNode sourceNode;
 
+    @JsonDeserialize(using = WorkflowNodeDeserializer.class)
     @ManyToOne(cascade = CascadeType.ALL)
     private WorkflowNode targetNode;
 
@@ -111,17 +116,17 @@ public class WorkflowTransition implements Updatable<WorkflowTransition, Long> {
         this.primary = transition.getPrimary();
 
         // update source node
-        if (transition.getSourceNode() != null) {
+        if (transition.getSourceNode() != null && this.sourceNode != null) {
             this.sourceNode.update(transition.getSourceNode());
         } else {
-            this.sourceNode = null;
+            this.sourceNode = transition.getSourceNode();
         }
 
         // update target node
-        if (transition.getTargetNode() != null) {
+        if (transition.getTargetNode() != null && this.targetNode != null) {
             this.targetNode.update(transition.getTargetNode());
         } else {
-            this.targetNode = null;
+            this.targetNode = transition.getTargetNode();
         }
 
         // update actions

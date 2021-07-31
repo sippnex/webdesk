@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-@Import({ WorkflowModuleConfig.class})
+@Import({ WorkflowModule.class})
 public @interface EnableWebdeskWorkflow {
 }
