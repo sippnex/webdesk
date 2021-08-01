@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<div *ngIf="workflow" fxLayout="column" fxLayoutGap="24px">
+<div fxLayout="column" fxLayoutGap="24px">
   <div>
     <h3>Allgemein</h3>
     <form [formGroup]="form" fxLayout="row" fxLayoutGap="24px">
@@ -30,7 +30,7 @@
     </form>
 
   </div>
-  <div>
+  <div *ngIf="workflow">
     <h3>Knoten</h3>
     <table mat-table [dataSource]="workflow.nodes">
 
@@ -75,7 +75,7 @@
     </button>
 
   </div>
-  <div>
+  <div *ngIf="workflow">
     <h3>Kanten</h3>
     <table mat-table [dataSource]="workflow.transitions">
 
@@ -89,6 +89,12 @@
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef> Name</th>
         <td mat-cell *matCellDef="let transition"> {{ transition.name }} </td>
+      </ng-container>
+
+      <!-- Order Column -->
+      <ng-container matColumnDef="order">
+        <th mat-header-cell *matHeaderCellDef> Platzierung</th>
+        <td mat-cell *matCellDef="let transition"> {{ transition.order }} </td>
       </ng-container>
 
       <!-- SourceNode Column -->
@@ -134,7 +140,7 @@
 
   </div>
 
-  <div>
+  <div *ngIf="workflow">
     <h3>Formularfelder</h3>
     <table mat-table [dataSource]="workflow.formElements">
 
@@ -192,7 +198,7 @@
     </button>
 
   </div>
-  <div>
+  <div *ngIf="workflow">
     <h3>Formular-Vorschau</h3>
     <div *ngIf="workflow.formElements.length > 0" style="box-sizing: border-box; padding: 12px 0">
 
@@ -201,14 +207,14 @@
         <div *ngIf="formElement.type === 'WorkflowFormTextElement'">
           <mat-form-field appearance="fill" style="width: 100%">
             <mat-label>{{formElement.name}}</mat-label>
-            <input matInput placeholder="Max Mustermann">
+            <input matInput [placeholder]="formElement.name">
           </mat-form-field>
         </div>
 
         <div *ngIf="formElement.type === 'WorkflowFormRichTextElement'">
           <mat-form-field appearance="fill" style="width: 100%">
             <mat-label>{{formElement.name}}</mat-label>
-            <textarea matInput placeholder="Lorem ipsum dolor sit amet"></textarea>
+            <textarea matInput [placeholder]="formElement.name"></textarea>
           </mat-form-field>
         </div>
 
@@ -229,9 +235,9 @@
       <mat-chip disabled>Keine Elemente vorhanden</mat-chip>
     </mat-chip-list>
   </div>
- <div>
+  <div>
     <h3>Workflow-Visualisierung</h3>
-    <div id='sigma-container' style="width: 100%; height: 300px"></div>
+    <div #workflowCanvas style="width: 100%; height: 300px"></div>
     <!--<div style="width: 100%; height: 300px; overflow: scroll; border: 1px solid gray; border-radius: 4px">
       <canvas #workflowCanvas width="2400" height="2400"></canvas>
     </div>-->

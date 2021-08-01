@@ -19,7 +19,7 @@ public class WorkflowModule {
     public WorkflowModule(AppService appService) {
         appService.registerApps(
                 new App("WorkflowApp", "Workflows", "App zur Administration von Workflows"),
-                new App("WorkflowInstanceApp", "Vorgänge", "App zur Verwaltung und Bearbeitung von Vorgäbgeb")
+                new App("WorkflowInstanceApp", "Vorgänge", "App zur Verwaltung und Bearbeitung von Vorgänge")
         );
     }
 

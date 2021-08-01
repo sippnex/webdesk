@@ -5,112 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6509cac-8dd0-4ec3-a463-14f1474e31d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/repository/WorkflowFormElementRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/repository/WorkflowInstanceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/repository/WorkflowTransitionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/service/WorkflowFormElementService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/service/WorkflowInstanceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/service/WorkflowTransitionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/web/converter/WorkflowNodeDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/web/rest/WorkflowFormElementResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/web/rest/WorkflowInstanceResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/web/rest/WorkflowTransitionResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-form-element-detail/workflow-form-element-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-node-detail/workflow-node-detail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-node-detail/workflow-node-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-transition-detail/workflow-transition-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-list/workflow-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-list/workflow-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/select-workflow-dialog/select-workflow-dialog.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/select-workflow-dialog/select-workflow-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/select-workflow-dialog/select-workflow-dialog.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-app.route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-detail/workflow-instance-detail.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-detail/workflow-instance-detail.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-detail/workflow-instance-detail.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-list/workflow-instance-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-list/workflow-instance-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-list/workflow-instance-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/services/workflow-form-element.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/services/workflow-transition.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/services/workflow.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/EnableWebdeskWorkflow.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/EnableWebdeskWorkflow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/WorkflowModuleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/WorkflowModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/Workflow.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/Workflow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/WorkflowModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/WorkflowModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowInstance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowTransition.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/WorkflowTransition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowFormElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowFormElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowPayloadElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowPayloadElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowPayloadElementID.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/domain/form/WorkflowPayloadElementID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/repository/WorkflowItemRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/repository/WorkflowNodeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/repository/WorkflowNodeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/service/WorkflowItemService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/service/WorkflowNodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/service/WorkflowNodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/web/rest/WorkflowItemResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/web/rest/WorkflowNodeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/workflow/src/main/java/io/github/sippnex/webdesk/workflow/web/rest/WorkflowNodeResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/dashboard.container.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-item-dialog/new-dashboard-item-dialog.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/dashboard/new-dashboard-item-dialog/new-dashboard-item-dialog.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/model-form-binding.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/model-form-binding.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes-detector.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes-detector.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes-dialog/unsaved-changes-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes-dialog/unsaved-changes-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes-dialog/unsaved-changes-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes-dialog/unsaved-changes-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/shared/unsaved-changes.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/core/src/lib/webdesk-core-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/core/src/lib/webdesk-core-theme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-attribute-mapping-detail/admin-workflow-action-attribute-mapping-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-action-detail/workflow-action-attribute-mapping-detail/workflow-action-attribute-mapping-detail.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-attribute-mapping-detail/admin-workflow-action-attribute-mapping-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-action-detail/workflow-action-attribute-mapping-detail/workflow-action-attribute-mapping-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-attribute-mapping-detail/admin-workflow-action-attribute-mapping-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-action-detail/workflow-action-attribute-mapping-detail/workflow-action-attribute-mapping-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-action-detail/workflow-action-detail.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-action-detail/workflow-action-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-action-detail/admin-workflow-action-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-action-detail/workflow-action-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-detail.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-form-element-detail/admin-workflow-form-element-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-form-element-detail/workflow-form-element-detail.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-form-element-detail/admin-workflow-form-element-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-form-element-detail/workflow-form-element-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-form-element-detail/admin-workflow-form-element-detail.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-node-detail/admin-workflow-node-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-node-detail/workflow-node-detail.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-node-detail/admin-workflow-node-detail.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-node-detail/admin-workflow-node-detail.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-transition-detail/admin-workflow-transition-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-transition-detail/workflow-transition-detail.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-transition-detail/admin-workflow-transition-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-transition-detail/workflow-transition-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-detail/admin-workflow-transition-detail/admin-workflow-transition-detail.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-list/admin-workflow-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-detail.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-list/admin-workflow-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-list/workflow-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/admin-workflow-list/admin-workflow-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/workflow-admin-app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-apps/workflow-admin-app/workflow-admin-app.route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/admin-widgets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/new-workflow/new-workflow.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/new-workflow/new-workflow.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/new-workflow/new-workflow.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-app.route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-detail/workflow-item-detail.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-detail/workflow-item-detail.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-detail/workflow-item-detail.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-list/workflow-item-list.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-list/workflow-item-list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-item-list/workflow-item-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-form-element.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-form-element.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-item.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-instance.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-transition-detail/workflow-transition-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-transition-detail/workflow-transition-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-transition-detail/workflow-transition-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-app/workflow-detail/workflow-transition-detail/workflow-transition-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/select-workflow-dialog/select-workflow-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/select-workflow-dialog/select-workflow-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-detail/workflow-instance-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-detail/workflow-instance-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-detail/workflow-instance-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-detail/workflow-instance-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-list/workflow-instance-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/apps/workflow-instance-app/workflow-instance-list/workflow-instance-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-transition.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/model/workflow-transition.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/workflow-admin.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/workflow-item.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/workflow-node.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/services/workflow-node.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/workflow.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/workflow.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/workflow.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/lib/services/workflow-instance.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/projects/workflow/src/public-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/projects/workflow/src/public-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +193,7 @@
       <workItem from="1627640638231" duration="3726000" />
       <workItem from="1627648776222" duration="4993000" />
       <workItem from="1627718905980" duration="4343000" />
-      <workItem from="1627735973594" duration="2697000" />
+      <workItem from="1627735973594" duration="7277000" />
     </task>
     <task id="LOCAL-00001" summary="Project restructure">
       <created>1627451023052</created>
@@ -295,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627451023052</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implement first version of workflow module">
+      <created>1627738725030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627738725030</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +232,8 @@
       <path value="$PROJECT_DIR$/frontend" />
     </ignored-roots>
     <MESSAGE value="Project restructure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project restructure" />
+    <MESSAGE value="Implement first version of workflow module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement first version of workflow module" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

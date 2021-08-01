@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import io.github.sippnex.webdesk.workflow.domain.form.WorkflowPayloadElement;
 
 import javax.persistence.*;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -68,6 +69,7 @@ public class WorkflowInstance {
     public List<WorkflowTransition> getAvailableTransitions() {
         return workflow.getTransitions().stream()
                 .filter(transition -> Objects.equals(transition.getSourceNode(), currentNode))
+                .sorted(Comparator.comparingInt(WorkflowTransition::getOrder))
                 .collect(Collectors.toList());
     }
 }

@@ -12,7 +12,7 @@
       <div>{{workflow.name}}</div>
       <div style="color: gray">Beschreibung hinzufügen</div>
       <div style="padding-top: 12px">
-        <button mat-raised-button color="primary" (click)="selectWorkflow(workflow)" style="width: 100%">Workflow starten</button>
+        <button mat-raised-button color="primary" (click)="selectWorkflow(workflow)" style="width: 100%">Vorgang starten</button>
       </div>
     </mat-card>
     <p *ngIf="(filteredWorkflows | async)?.length === 0">Keine Workflows gefunden...</p>

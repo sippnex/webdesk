@@ -34,6 +34,10 @@
         <input matInput placeholder="Symbol" formControlName="icon"/>
       </mat-form-field>
       <mat-form-field appearance="fill" style="width: 100%">
+        <mat-label>Platzierung</mat-label>
+        <input matInput placeholder="Platzierung" formControlName="order"/>
+      </mat-form-field>
+      <mat-form-field appearance="fill" style="width: 100%">
         <mat-label>Quellknoten</mat-label>
         <mat-select formControlName="sourceNode" [compareWith]="compareNodes">
           <mat-option *ngFor="let node of availableNodes" [value]="node">{{node.name}}</mat-option>

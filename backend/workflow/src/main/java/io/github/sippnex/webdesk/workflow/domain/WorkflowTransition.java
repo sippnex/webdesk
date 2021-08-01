@@ -23,13 +23,13 @@ public class WorkflowTransition implements Updatable<WorkflowTransition, Long> {
 
     private String icon;
 
+    @Column(name = "`order`")
+    private Integer order;
+
     @ManyToOne
     @JsonIdentityReference(alwaysAsId = true)
     @JsonProperty("workflowId")
     private Workflow workflow;
-
-    @Column(name = "`primary`")
-    private Boolean primary = false;
 
     @JsonDeserialize(using = WorkflowNodeDeserializer.class)
     @ManyToOne(cascade = CascadeType.ALL)
@@ -68,12 +68,12 @@ public class WorkflowTransition implements Updatable<WorkflowTransition, Long> {
         this.icon = icon;
     }
 
-    public Boolean getPrimary() {
-        return primary;
+    public Integer getOrder() {
+        return order;
     }
 
-    public void setPrimary(Boolean primary) {
-        this.primary = primary;
+    public void setOrder(Integer order) {
+        this.order = order;
     }
 
     public WorkflowNode getSourceNode() {
@@ -113,7 +113,7 @@ public class WorkflowTransition implements Updatable<WorkflowTransition, Long> {
         // update basic attributes
         this.name = transition.getName();
         this.icon = transition.getIcon();
-        this.primary = transition.getPrimary();
+        this.order = transition.getOrder();
 
         // update source node
         if (transition.getSourceNode() != null && this.sourceNode != null) {

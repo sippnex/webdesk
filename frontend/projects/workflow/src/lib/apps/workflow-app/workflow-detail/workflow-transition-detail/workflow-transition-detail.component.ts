@@ -26,6 +26,7 @@ export class WorkflowTransitionDetailComponent implements OnInit, ModelFormBindi
     id: new FormControl(''),
     name: new FormControl('', [Validators.required]),
     icon: new FormControl('', [Validators.required]),
+    order: new FormControl(''),
     sourceNode: new FormControl(''),
     targetNode: new FormControl('', [Validators.required]),
   });
@@ -89,6 +90,7 @@ export class WorkflowTransitionDetailComponent implements OnInit, ModelFormBindi
       this.transition = {
         name: '',
         icon: '',
+        order: 0,
         workflowId: +params.workflowId
       };
     }
@@ -103,6 +105,7 @@ export class WorkflowTransitionDetailComponent implements OnInit, ModelFormBindi
     this.form.get('id')!.setValue(this.transition?.id);
     this.form.get('name')!.setValue(this.transition?.name);
     this.form.get('icon')!.setValue(this.transition?.icon);
+    this.form.get('order')!.setValue(this.transition?.order);
     this.form.get('sourceNode')!.setValue(this.transition?.sourceNode);
     this.form.get('targetNode')!.setValue(this.transition?.targetNode);
   }
@@ -113,6 +116,7 @@ export class WorkflowTransitionDetailComponent implements OnInit, ModelFormBindi
       id: this.form.get('id')!.value,
       name: this.form.get('name')!.value,
       icon: this.form.get('icon')!.value,
+      order: this.form.get('order')!.value,
       sourceNode: this.form.get('sourceNode')!.value,
       targetNode: this.form.get('targetNode')!.value,
     }

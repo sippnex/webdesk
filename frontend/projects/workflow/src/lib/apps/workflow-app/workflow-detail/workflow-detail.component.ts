@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {AfterViewChecked, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Params, Router} from '@angular/router';
 import {ModelFormBinding, UnsavedChangesProtector, DeleteConfirmDialogComponent} from '@webdesk/core';
 import {MatDialog} from '@angular/material/dialog';
@@ -20,7 +20,7 @@ import {WorkflowService} from "../../../services/workflow.service";
 
 declare const sigma: any;
 
-const DECISION_NODE: WorkflowDecisionNode = {
+/*const DECISION_NODE: WorkflowDecisionNode = {
   id: 1,
   name: 'Sonderurlaub?',
   endpointTrue: {
@@ -43,30 +43,7 @@ const WORKFLOW_NODES: WorkflowNode[] = [
   {id: 5, name: 'Beantragt bei Vorgesetzten'} as WorkflowNode,
   {id: 6, name: 'Genehmigt'} as WorkflowNode,
   {id: 7, name: 'Abgelehnt'} as WorkflowNode
-];
-
-/*const WORKFLOW_TRANSITIONS: WorkflowTransition[] = [
-  {id: 1, name: 'Beantragen', primary: true, undefined, WORKFLOW_NODES[0]},
-  new WorkflowTransition(2, 'Beantragen bei Personalabteilung', false, (WORKFLOW_NODES[0] as WorkflowDecisionNode).endpointTrue, WORKFLOW_NODES[1]),
-  new WorkflowTransition(3, 'Beantragen bei Vorgesetzten', false, (WORKFLOW_NODES[0] as WorkflowDecisionNode).endpointFalse, WORKFLOW_NODES[2]),
-  new WorkflowTransition(4, 'Genehmigen', true, WORKFLOW_NODES[2], WORKFLOW_NODES[3]),
-  new WorkflowTransition(5, 'Ablehnen', false, WORKFLOW_NODES[2], WORKFLOW_NODES[4])
 ];*/
-
-
-const WORKFLOW_FORM_ELEMENTS: WorkflowFormElement[] = [
-  {
-    type: 'WorkflowFormSelectElement',
-    id: 1,
-    name: 'Urlaubsart',
-    options: [
-      {id: 1, value: 'Tarifurlaub'} as WorkflowFormSelectOption,
-      {id: 2, value: 'Sonderurlaub'} as WorkflowFormSelectOption,
-    ]
-  } as WorkflowFormSelectElement,
-  {type: 'WorkflowFormTextElement', id: 2, name: 'Mitarbeiter', maxLength: 50} as WorkflowFormTextElement,
-  {type: 'WorkflowFormRichTextElement', id: 3, name: 'Beschreibung', maxLength: 255} as WorkflowFormRichTextElement,
-];
 
 type DrawnState = { stateId: number, x: number, y: number };
 type DrawnTransition = { transitionId: number };
@@ -89,12 +66,8 @@ export class WorkflowDetailComponent implements OnInit, ModelFormBinding, Unsave
   });
 
   displayedStateColumns: string[] = ['id', 'name', 'controls'];
-  nodes: WorkflowNode[] = WORKFLOW_NODES;
-
-  displayedTransitionColumns: string[] = ['id', 'name', 'sourceNode', 'targetNode', 'controls'];
-
+  displayedTransitionColumns: string[] = ['id', 'name', 'order', 'sourceNode', 'targetNode', 'controls'];
   displayedFormElementsColumns: string[] = ['id', 'name', 'type', 'additionalOptions', 'controls'];
-  formElements: WorkflowFormElement[] = WORKFLOW_FORM_ELEMENTS;
 
   constructor(private route: ActivatedRoute, private router: Router, private dialog: MatDialog, private workflowService: WorkflowService) {
   }
@@ -104,6 +77,7 @@ export class WorkflowDetailComponent implements OnInit, ModelFormBinding, Unsave
       await this.initModel(params);
       await this.initForm();
       await this.updateForm();
+      this.renderWorkflow();
     });
   }
 
@@ -129,7 +103,7 @@ export class WorkflowDetailComponent implements OnInit, ModelFormBinding, Unsave
     if (result) {
       const index = this.workflow.nodes.findIndex(n => n.id === node.id);
       this.workflow.nodes.splice(index, 1);
-      this.saveChanges(false);
+      this.saveChanges();
     }
   }
 
@@ -170,40 +144,6 @@ export class WorkflowDetailComponent implements OnInit, ModelFormBinding, Unsave
   async initModel(params: Params): Promise<void> {
     if (params.workflowId && params.workflowId !== '0') {
       this.workflow = await this.workflowService.getWorkflowById(+params.workflowId).toPromise();
-      // this.drawWorkflow();
-      /*this.sigma = new sigma(
-        {
-          renderer: {
-            container: document.getElementById('sigma-container'),
-            type: 'canvas'
-          },
-          settings: {
-            maxEdgeSize: 4,
-            maxNodeSize: 20,
-            defaultLabelSize: 14,
-            edgeLabelSize: 'proportional',
-            edgeLabelSizePowRatio: 1.5,
-            drawLabels: false,
-            mouseWheelEnabled: false,
-          }
-        }
-      );
-      this.sigma.graph.read(this.getGraph());
-      this.sigma.startForceAtlas2({
-        worker: true,
-        autoStop: true,
-        background: false,
-        scalingRatio: 0.5,
-        adjustSizes: false,
-        gravity: 0.1,
-        barnesHutOptimize: true,
-        barnesHutTheta: 0.1,
-        slowDown: 3
-      });
-      setTimeout(() => {
-        this.sigma.killForceAtlas2();
-      }, 1000);
-      this.sigma.refresh();*/
     } else {
       this.workflow = {
         name: '',
@@ -245,29 +185,65 @@ export class WorkflowDetailComponent implements OnInit, ModelFormBinding, Unsave
     const workflow = await this.workflowService.saveWorkflow(this.workflow).toPromise();
     this.form.markAsPristine();
     if (refresh) {
-      this.router.navigate([`../${workflow.id}`], {relativeTo: this.route});
+      this.router.navigate([`../${workflow.id}`], {relativeTo: this.route, replaceUrl: true});
     } else {
       this.workflow = workflow;
     }
+  }
+
+  private renderWorkflow(): void {
+    this.sigma = new sigma(
+      {
+        renderer: {
+          container: this.workflowCanvas.nativeElement,
+          type: 'canvas'
+        },
+        settings: {
+          maxEdgeSize: 4,
+          maxNodeSize: 20,
+          defaultLabelSize: 14,
+          edgeLabelSize: 'proportional',
+          edgeLabelSizePowRatio: 1.5,
+          drawLabels: false,
+          mouseWheelEnabled: false,
+        }
+      }
+    );
+    this.sigma.graph.read(this.getGraph());
+    this.sigma.startForceAtlas2({
+      worker: true,
+      autoStop: true,
+      background: false,
+      scalingRatio: 0.5,
+      adjustSizes: false,
+      gravity: 0.1,
+      barnesHutOptimize: true,
+      barnesHutTheta: 0.1,
+      slowDown: 3
+    });
+    setTimeout(() => {
+      this.sigma.killForceAtlas2();
+    }, 1000);
+    this.sigma.refresh();
   }
 
   private getGraph(): any {
     const graph = {nodes: [], edges: []};
     // @ts-ignore
     graph.nodes.push({id: 0, label: '0: Start', x: 0, y: 0, size: 30, color: '#818181'});
-    this.nodes.forEach((node, i) => {
+    this.workflow.nodes.forEach((node, i) => {
       // @ts-ignore
       graph.nodes.push({id: node.id, label: `${node.id}: ${node.name}`, x: 1 + (i * 20), y: 1 + (i * 2), size: 20, color: node.type === 'WorkflowDecisionNode' ? '#7e8ed4' : '#818181'});
     });
-    this.workflow?.transitions.forEach(transition => {
+    this.workflow.transitions.forEach(transition => {
       let sourceNodeId = transition.sourceNode ? transition.sourceNode.id : 0;
       let label = `${transition.id}: ${transition.name}`;
       let color = '#818181';
-      if (transition.sourceNode!.type === 'WorkflowDecisionEndpointTrue') {
+      if (transition.sourceNode?.type === 'WorkflowDecisionEndpointTrue') {
         sourceNodeId = (transition.sourceNode as WorkflowDecisionEndpointTrue).parentNode!.id;
         label = 'Ja --> ' + label;
         color = '#7ab374';
-      } else if (transition.sourceNode!.type === 'WorkflowDecisionEndpointFalse') {
+      } else if (transition.sourceNode?.type === 'WorkflowDecisionEndpointFalse') {
         sourceNodeId = (transition.sourceNode as WorkflowDecisionEndpointTrue).parentNode!.id;
         label = 'Nein --> ' + label;
         color = '#c37272';
@@ -278,7 +254,7 @@ export class WorkflowDetailComponent implements OnInit, ModelFormBinding, Unsave
     return graph;
   }
 
-  private drawWorkflow(): void {
+  /*private drawWorkflow(): void {
     const drawnStates: DrawnState[] = [];
     const drawnTransitions: DrawnTransition[] = [];
     const canvas = this.workflowCanvas.nativeElement;
@@ -291,7 +267,7 @@ export class WorkflowDetailComponent implements OnInit, ModelFormBinding, Unsave
     ctx.arc(x, y, 40, 0, 2 * Math.PI);
     ctx.stroke();
     ctx.fillText('Start', x - 29, y + 5);
-    const transitions = this.workflow?.transitions.filter(t => t.sourceNode == null);
+    const transitions = this.workflow.transitions.filter(t => t.sourceNode == null);
     for (let i = 0; i < transitions.length; i++) {
       this.drawWorkflowTransition(ctx, x + 40, y, i, transitions.length, transitions[i], drawnStates, drawnTransitions);
     }
@@ -323,5 +299,5 @@ export class WorkflowDetailComponent implements OnInit, ModelFormBinding, Unsave
     for (let i = 0; i < transitions.length; i++) {
       this.drawWorkflowTransition(ctx, x + 40, y, i, transitions.length, transitions[i], drawnStates, drawnTransitions);
     }
-  }
+  }*/
 }

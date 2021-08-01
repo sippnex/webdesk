@@ -7,6 +7,9 @@ import {WorkflowInstanceService} from "../../../services/workflow-instance.servi
 import {WorkflowService} from "../../../services/workflow.service";
 import {FormControl, FormGroup} from "@angular/forms";
 import {WorkflowInstance} from "../../../model/workflow-instance.interface";
+import {WorkflowPayloadElement} from "../../../model/workflow-payload-element.interface";
+import {WorkflowTextPayloadElement} from "../../../model/workflow-text-payload-element.interface";
+import {WorkflowFormTextElement} from "../../../model/workflow-form-text-element.interface";
 
 @Component({
   selector: 'lib-workflow-instance-detail',
@@ -53,20 +56,39 @@ export class WorkflowInstanceDetailComponent implements OnInit, ModelFormBinding
 
   initForm(): void {
     this.form = new FormGroup({});
-    this.workflowInstance!.workflow!.formElements.forEach(formElement => {
+    this.workflowInstance.workflow!.formElements.forEach(formElement => {
       this.form.addControl(formElement.name, new FormControl(''))
     });
   }
 
   updateForm(): void {
-    // TODO: implement form update
+    this.form.reset();
+    this.workflowInstance.formPayload.forEach(payloadElement => {
+      let value: any;
+      // TODO: implement further payload elements
+      if (payloadElement.type === 'WorkflowTextPayloadElement') {
+        value = (payloadElement as WorkflowTextPayloadElement).value;
+      }
+      this.form.get(payloadElement.name)?.setValue(value);
+    });
   }
 
   updateModel(): void {
-    // TODO: implement model update
-    // manually set available transitions for new workflow
-    if (!this.workflowInstance.id && this.workflowInstance.workflow) {
-      this.workflowInstance.availableTransitions = this.workflowInstance.workflow.transitions.filter(transition => !transition.sourceNode);
+    const formPayload: WorkflowPayloadElement[] = [];
+    this.workflowInstance.workflow!.formElements.forEach(formElement => {
+      const formControl = this.form.get(formElement.name)!;
+      // TODO: implement further form elements
+      if (formElement.type === 'WorkflowFormTextElement') {
+        formPayload.push({
+          type: 'WorkflowTextPayloadElement',
+          name: formElement.name,
+          value: formControl.value
+        } as WorkflowTextPayloadElement);
+      }
+    });
+    this.workflowInstance = {
+      ...this.workflowInstance,
+      formPayload
     }
   }
 
@@ -82,6 +104,11 @@ export class WorkflowInstanceDetailComponent implements OnInit, ModelFormBinding
     this.updateModel();
     this.form.markAsPristine();
     const workflowInstance: WorkflowInstance = await this.workflowInstanceService.saveWorkflowInstance(this.workflowInstance, transition).toPromise();
-    this.router.navigate([`../${workflowInstance.id}`], {relativeTo: this.route});
+    if (!this.workflowInstance.id) {
+      this.router.navigate([`../${workflowInstance.id}`], {relativeTo: this.route, replaceUrl: true});
+    } else {
+      this.workflowInstance = workflowInstance;
+    }
+
   }
 }
